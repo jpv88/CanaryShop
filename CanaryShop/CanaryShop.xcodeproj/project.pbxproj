@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F268E1B26937CDF000BF154 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 7F268E1A26937CDF000BF154 /* Swinject */; };
 		7F731CFF269358E00084EB87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F731CFE269358E00084EB87 /* AppDelegate.swift */; };
 		7F731D01269358E00084EB87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F731D00269358E00084EB87 /* SceneDelegate.swift */; };
 		7F731D03269358E00084EB87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F731D02269358E00084EB87 /* ViewController.swift */; };
@@ -54,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F268E1B26937CDF000BF154 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +142,9 @@
 			dependencies = (
 			);
 			name = CanaryShop;
+			packageProductDependencies = (
+				7F268E1A26937CDF000BF154 /* Swinject */,
+			);
 			productName = CanaryShop;
 			productReference = 7F731CFB269358E00084EB87 /* CanaryShop.app */;
 			productType = "com.apple.product-type.application";
@@ -212,6 +217,9 @@
 				Base,
 			);
 			mainGroup = 7F731CF2269358E00084EB87;
+			packageReferences = (
+				7F268E1926937CDF000BF154 /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = 7F731CFC269358E00084EB87 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -622,6 +630,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7F268E1926937CDF000BF154 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7F268E1A26937CDF000BF154 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F268E1926937CDF000BF154 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7F731CF3269358E00084EB87 /* Project object */;
 }
