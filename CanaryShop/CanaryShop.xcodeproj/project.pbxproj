@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F731CFF269358E00084EB87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F731CFE269358E00084EB87 /* AppDelegate.swift */; };
+		7F731D01269358E00084EB87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F731D00269358E00084EB87 /* SceneDelegate.swift */; };
+		7F731D03269358E00084EB87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F731D02269358E00084EB87 /* ViewController.swift */; };
+		7F731D06269358E00084EB87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F731D04269358E00084EB87 /* Main.storyboard */; };
+		7F731D08269358E10084EB87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F731D07269358E10084EB87 /* Assets.xcassets */; };
+		7F731D0B269358E10084EB87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F731D09269358E10084EB87 /* LaunchScreen.storyboard */; };
+		7F731D16269358E10084EB87 /* CanaryShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F731D15269358E10084EB87 /* CanaryShopTests.swift */; };
+		7F731D20269358E10084EB87 /* CanaryShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F731D1F269358E10084EB87 /* CanaryShopUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F731D12269358E10084EB87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F731CF3269358E00084EB87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F731CFA269358E00084EB87;
+			remoteInfo = CanaryShop;
+		};
+		7F731D1C269358E10084EB87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F731CF3269358E00084EB87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F731CFA269358E00084EB87;
+			remoteInfo = CanaryShop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7F731CFB269358E00084EB87 /* CanaryShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanaryShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F731CFE269358E00084EB87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7F731D00269358E00084EB87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7F731D02269358E00084EB87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7F731D05269358E00084EB87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7F731D07269358E10084EB87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F731D0A269358E10084EB87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7F731D0C269358E10084EB87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F731D11269358E10084EB87 /* CanaryShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanaryShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F731D15269358E10084EB87 /* CanaryShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanaryShopTests.swift; sourceTree = "<group>"; };
+		7F731D1B269358E10084EB87 /* CanaryShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanaryShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F731D1F269358E10084EB87 /* CanaryShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanaryShopUITests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F731CF8269358E00084EB87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F731D0E269358E10084EB87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F731D18269358E10084EB87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F731CF2269358E00084EB87 = {
+			isa = PBXGroup;
+			children = (
+				7F731CFD269358E00084EB87 /* CanaryShop */,
+				7F731D14269358E10084EB87 /* CanaryShopTests */,
+				7F731D1E269358E10084EB87 /* CanaryShopUITests */,
+				7F731CFC269358E00084EB87 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F731CFC269358E00084EB87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F731CFB269358E00084EB87 /* CanaryShop.app */,
+				7F731D11269358E10084EB87 /* CanaryShopTests.xctest */,
+				7F731D1B269358E10084EB87 /* CanaryShopUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F731CFD269358E00084EB87 /* CanaryShop */ = {
+			isa = PBXGroup;
+			children = (
+				7F731CFE269358E00084EB87 /* AppDelegate.swift */,
+				7F731D00269358E00084EB87 /* SceneDelegate.swift */,
+				7F731D02269358E00084EB87 /* ViewController.swift */,
+				7F731D04269358E00084EB87 /* Main.storyboard */,
+				7F731D07269358E10084EB87 /* Assets.xcassets */,
+				7F731D09269358E10084EB87 /* LaunchScreen.storyboard */,
+				7F731D0C269358E10084EB87 /* Info.plist */,
+			);
+			path = CanaryShop;
+			sourceTree = "<group>";
+		};
+		7F731D14269358E10084EB87 /* CanaryShopTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F731D15269358E10084EB87 /* CanaryShopTests.swift */,
+			);
+			path = CanaryShopTests;
+			sourceTree = "<group>";
+		};
+		7F731D1E269358E10084EB87 /* CanaryShopUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7F731D1F269358E10084EB87 /* CanaryShopUITests.swift */,
+			);
+			path = CanaryShopUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F731CFA269358E00084EB87 /* CanaryShop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F731D23269358E10084EB87 /* Build configuration list for PBXNativeTarget "CanaryShop" */;
+			buildPhases = (
+				7F731CF7269358E00084EB87 /* Sources */,
+				7F731CF8269358E00084EB87 /* Frameworks */,
+				7F731CF9269358E00084EB87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CanaryShop;
+			productName = CanaryShop;
+			productReference = 7F731CFB269358E00084EB87 /* CanaryShop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F731D10269358E10084EB87 /* CanaryShopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F731D26269358E10084EB87 /* Build configuration list for PBXNativeTarget "CanaryShopTests" */;
+			buildPhases = (
+				7F731D0D269358E10084EB87 /* Sources */,
+				7F731D0E269358E10084EB87 /* Frameworks */,
+				7F731D0F269358E10084EB87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F731D13269358E10084EB87 /* PBXTargetDependency */,
+			);
+			name = CanaryShopTests;
+			productName = CanaryShopTests;
+			productReference = 7F731D11269358E10084EB87 /* CanaryShopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7F731D1A269358E10084EB87 /* CanaryShopUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F731D29269358E10084EB87 /* Build configuration list for PBXNativeTarget "CanaryShopUITests" */;
+			buildPhases = (
+				7F731D17269358E10084EB87 /* Sources */,
+				7F731D18269358E10084EB87 /* Frameworks */,
+				7F731D19269358E10084EB87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F731D1D269358E10084EB87 /* PBXTargetDependency */,
+			);
+			name = CanaryShopUITests;
+			productName = CanaryShopUITests;
+			productReference = 7F731D1B269358E10084EB87 /* CanaryShopUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F731CF3269358E00084EB87 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					7F731CFA269358E00084EB87 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					7F731D10269358E10084EB87 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 7F731CFA269358E00084EB87;
+					};
+					7F731D1A269358E10084EB87 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 7F731CFA269358E00084EB87;
+					};
+				};
+			};
+			buildConfigurationList = 7F731CF6269358E00084EB87 /* Build configuration list for PBXProject "CanaryShop" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F731CF2269358E00084EB87;
+			productRefGroup = 7F731CFC269358E00084EB87 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F731CFA269358E00084EB87 /* CanaryShop */,
+				7F731D10269358E10084EB87 /* CanaryShopTests */,
+				7F731D1A269358E10084EB87 /* CanaryShopUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F731CF9269358E00084EB87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F731D0B269358E10084EB87 /* LaunchScreen.storyboard in Resources */,
+				7F731D08269358E10084EB87 /* Assets.xcassets in Resources */,
+				7F731D06269358E00084EB87 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F731D0F269358E10084EB87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F731D19269358E10084EB87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F731CF7269358E00084EB87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F731D03269358E00084EB87 /* ViewController.swift in Sources */,
+				7F731CFF269358E00084EB87 /* AppDelegate.swift in Sources */,
+				7F731D01269358E00084EB87 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F731D0D269358E10084EB87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F731D16269358E10084EB87 /* CanaryShopTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F731D17269358E10084EB87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F731D20269358E10084EB87 /* CanaryShopUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F731D13269358E10084EB87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F731CFA269358E00084EB87 /* CanaryShop */;
+			targetProxy = 7F731D12269358E10084EB87 /* PBXContainerItemProxy */;
+		};
+		7F731D1D269358E10084EB87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F731CFA269358E00084EB87 /* CanaryShop */;
+			targetProxy = 7F731D1C269358E10084EB87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F731D04269358E00084EB87 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F731D05269358E00084EB87 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7F731D09269358E10084EB87 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F731D0A269358E10084EB87 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F731D21269358E10084EB87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7F731D22269358E10084EB87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F731D24269358E10084EB87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CanaryShop/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = CanaryShop;
+				INFOPLIST_KEY_CFBundleName = CanaryShop;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jpv.CanaryShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7F731D25269358E10084EB87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CanaryShop/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = CanaryShop;
+				INFOPLIST_KEY_CFBundleName = CanaryShop;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jpv.CanaryShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		7F731D27269358E10084EB87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jpv.CanaryShopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanaryShop.app/CanaryShop";
+			};
+			name = Debug;
+		};
+		7F731D28269358E10084EB87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jpv.CanaryShopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanaryShop.app/CanaryShop";
+			};
+			name = Release;
+		};
+		7F731D2A269358E10084EB87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jpv.CanaryShopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CanaryShop;
+			};
+			name = Debug;
+		};
+		7F731D2B269358E10084EB87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jpv.CanaryShopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CanaryShop;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F731CF6269358E00084EB87 /* Build configuration list for PBXProject "CanaryShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F731D21269358E10084EB87 /* Debug */,
+				7F731D22269358E10084EB87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F731D23269358E10084EB87 /* Build configuration list for PBXNativeTarget "CanaryShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F731D24269358E10084EB87 /* Debug */,
+				7F731D25269358E10084EB87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F731D26269358E10084EB87 /* Build configuration list for PBXNativeTarget "CanaryShopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F731D27269358E10084EB87 /* Debug */,
+				7F731D28269358E10084EB87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F731D29269358E10084EB87 /* Build configuration list for PBXNativeTarget "CanaryShopUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F731D2A269358E10084EB87 /* Debug */,
+				7F731D2B269358E10084EB87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F731CF3269358E00084EB87 /* Project object */;
+}
