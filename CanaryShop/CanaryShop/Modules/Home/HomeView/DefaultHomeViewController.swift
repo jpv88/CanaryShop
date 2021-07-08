@@ -7,7 +7,31 @@
 
 import UIKit
 
-class DefaultHomeViewController: UIViewController {
+class DefaultHomeViewController: BaseViewController {
+    
+    var presenter: HomePresenter?
+    
+    internal enum Constant {
+        static let title = "Canary Shop"
+        static let accessibilityIdentifier = "HomeView"
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+//        presenter?.onViewDidLoad()
+    }
+    
+    override func buildComponents() {
+        super.buildComponents()
+//        buildView()
+//        buildTableViewComponent()
+    }
+    
+    override func setUpLayout() {
+        super.setUpLayout()
+//        layoutTableViewComponent()
+    }
     
 }
 
