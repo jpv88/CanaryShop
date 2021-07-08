@@ -19,7 +19,7 @@ class DefaultHomeViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        presenter?.onViewDidLoad()
+        presenter?.onViewDidLoad()
     }
     
     override func buildComponents() {
@@ -37,8 +37,8 @@ class DefaultHomeViewController: BaseViewController {
 
 extension DefaultHomeViewController: HomeViewController {
     
-    func showLoadedInfo(input: String) {
-        
+    func showLoadedInfo(input: ListItemsModel) {
+        print("Items")
     }
     
     func showThisError(error: Error) {

@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - ListItemsModel
-struct ListItemsModel: Codable {
+@objc class ListItemsModel: NSObject, Codable {
     let products: [Product]?
 }
 

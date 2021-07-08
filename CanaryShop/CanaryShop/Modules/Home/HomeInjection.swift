@@ -28,9 +28,13 @@ internal extension Injector {
             guard let router = r.resolve(HomeRouter.self, argument: baseVC) else {
                 fatalError("Invalid args!")
             }
+            guard let listItemsInteractor = r.resolve(ListItemsInteractor.self) else {
+                fatalError("Invalid args!")
+            }
             let presenter = DefaultHomePresenter(
                 view: homeView,
-                router: router
+                router: router,
+                listItemsInteractor: listItemsInteractor
             )
             return presenter
         }
