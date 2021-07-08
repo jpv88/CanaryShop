@@ -27,9 +27,9 @@
 		7F38FA5A2697010F00866D2D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38FA592697010F00866D2D /* Endpoint.swift */; };
 		7F38FA5C2697019300866D2D /* ListItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38FA5B2697019300866D2D /* ListItems.swift */; };
 		7F38FA5E269706CD00866D2D /* HomeInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38FA5D269706CD00866D2D /* HomeInjection.swift */; };
+		7F38FA6026970DDE00866D2D /* ListItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38FA5F26970DDE00866D2D /* ListItemsModel.swift */; };
 		7F731CFF269358E00084EB87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F731CFE269358E00084EB87 /* AppDelegate.swift */; };
 		7F731D01269358E00084EB87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F731D00269358E00084EB87 /* SceneDelegate.swift */; };
-		7F731D03269358E00084EB87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F731D02269358E00084EB87 /* ViewController.swift */; };
 		7F731D08269358E10084EB87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F731D07269358E10084EB87 /* Assets.xcassets */; };
 		7F731D0B269358E10084EB87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F731D09269358E10084EB87 /* LaunchScreen.storyboard */; };
 		7F731D16269358E10084EB87 /* CanaryShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F731D15269358E10084EB87 /* CanaryShopTests.swift */; };
@@ -73,10 +73,10 @@
 		7F38FA592697010F00866D2D /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		7F38FA5B2697019300866D2D /* ListItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItems.swift; sourceTree = "<group>"; };
 		7F38FA5D269706CD00866D2D /* HomeInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInjection.swift; sourceTree = "<group>"; };
+		7F38FA5F26970DDE00866D2D /* ListItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsModel.swift; sourceTree = "<group>"; };
 		7F731CFB269358E00084EB87 /* CanaryShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanaryShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F731CFE269358E00084EB87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F731D00269358E00084EB87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7F731D02269358E00084EB87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7F731D07269358E10084EB87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F731D0A269358E10084EB87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F731D0C269358E10084EB87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -122,7 +122,6 @@
 				7F38FA332696FA7B00866D2D /* BaseViewController.swift */,
 				7F38FA452696FD3600866D2D /* RouterBase.swift */,
 				7F731D00269358E00084EB87 /* SceneDelegate.swift */,
-				7F731D02269358E00084EB87 /* ViewController.swift */,
 				7F731D07269358E10084EB87 /* Assets.xcassets */,
 				7F731D09269358E10084EB87 /* LaunchScreen.storyboard */,
 			);
@@ -249,6 +248,7 @@
 		7F38FA56269700D100866D2D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7F38FA5F26970DDE00866D2D /* ListItemsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -438,9 +438,9 @@
 			files = (
 				7F38FA5E269706CD00866D2D /* HomeInjection.swift in Sources */,
 				7F38FA4A2696FDFC00866D2D /* RegisterUtils.swift in Sources */,
+				7F38FA6026970DDE00866D2D /* ListItemsModel.swift in Sources */,
 				7F38FA322696F92500866D2D /* HomeViewController.swift in Sources */,
 				7F38FA402696FC1B00866D2D /* DefaultHomePresenter.swift in Sources */,
-				7F731D03269358E00084EB87 /* ViewController.swift in Sources */,
 				7F731CFF269358E00084EB87 /* AppDelegate.swift in Sources */,
 				7F38FA382696FABA00866D2D /* Colors.swift in Sources */,
 				7F38FA4E2696FF1A00866D2D /* Interactor.swift in Sources */,

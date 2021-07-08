@@ -9,7 +9,7 @@ import Foundation
 
 class ListItemsInteractor: OutputInteractor<ListItemsInteractor.Output> {
     
-    typealias Output = String
+    typealias Output = ListItemsModel
     
     private let webService: WebService
     
@@ -19,6 +19,13 @@ class ListItemsInteractor: OutputInteractor<ListItemsInteractor.Output> {
     }
     
     override func execute() async throws -> Output {
-        return ""
+        
+        do {
+            let items = try await webService.load(type: ListItemsModel.self, endpoint: .List)
+            return items
+        } catch {
+            throw MyCustomError.ApiError("Api Error")
+        }
+
     }
 }
