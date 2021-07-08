@@ -76,6 +76,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F38FA282696F7E900866D2D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7F731CFE269358E00084EB87 /* AppDelegate.swift */,
+				7F731D00269358E00084EB87 /* SceneDelegate.swift */,
+				7F731D02269358E00084EB87 /* ViewController.swift */,
+				7F731D04269358E00084EB87 /* Main.storyboard */,
+				7F731D07269358E10084EB87 /* Assets.xcassets */,
+				7F731D09269358E10084EB87 /* LaunchScreen.storyboard */,
+				7F731D0C269358E10084EB87 /* Info.plist */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		7F38FA292696F7F000866D2D /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		7F38FA2A2696F7F700866D2D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		7F38FA2B2696F7FD00866D2D /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
 		7F731CF2269358E00084EB87 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +134,10 @@
 		7F731CFD269358E00084EB87 /* CanaryShop */ = {
 			isa = PBXGroup;
 			children = (
-				7F731CFE269358E00084EB87 /* AppDelegate.swift */,
-				7F731D00269358E00084EB87 /* SceneDelegate.swift */,
-				7F731D02269358E00084EB87 /* ViewController.swift */,
-				7F731D04269358E00084EB87 /* Main.storyboard */,
-				7F731D07269358E10084EB87 /* Assets.xcassets */,
-				7F731D09269358E10084EB87 /* LaunchScreen.storyboard */,
-				7F731D0C269358E10084EB87 /* Info.plist */,
+				7F38FA282696F7E900866D2D /* Base */,
+				7F38FA292696F7F000866D2D /* Commons */,
+				7F38FA2A2696F7F700866D2D /* Modules */,
+				7F38FA2B2696F7FD00866D2D /* NetworkLayer */,
 			);
 			path = CanaryShop;
 			sourceTree = "<group>";
@@ -444,7 +476,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CanaryShop/Info.plist;
+				INFOPLIST_FILE = CanaryShop/Base/Info.plist;
 				INFOPLIST_KEY_CFBundleExecutable = CanaryShop;
 				INFOPLIST_KEY_CFBundleName = CanaryShop;
 				INFOPLIST_KEY_CFBundleVersion = 1;
@@ -475,7 +507,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CanaryShop/Info.plist;
+				INFOPLIST_FILE = CanaryShop/Base/Info.plist;
 				INFOPLIST_KEY_CFBundleExecutable = CanaryShop;
 				INFOPLIST_KEY_CFBundleName = CanaryShop;
 				INFOPLIST_KEY_CFBundleVersion = 1;
