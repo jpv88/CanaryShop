@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol ListItemsTableViewCellProtocol {
+    func selectedInvoice(code: String, quantity: Int)
+}
+
 class ListItemsTableViewCell: UITableViewCell {
+    
+    var delegate: ListItemsTableViewCellProtocol?
     
     private enum OperatorType {
         case plus
@@ -20,6 +26,8 @@ class ListItemsTableViewCell: UITableViewCell {
     @IBOutlet private var quantityTitleLabel: UILabel!
     @IBOutlet private var itemNameLabel: UILabel!
     @IBOutlet private var itemTitleLabel: UILabel!
+    
+    private var code: String!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -46,8 +54,9 @@ class ListItemsTableViewCell: UITableViewCell {
         button.tintColor = Colors.secondary
     }
     
-    func fill(itemTitle: String) {
+    func fill(itemTitle: String, code: String) {
         itemNameLabel.text = itemTitle
+        self.code = code
     }
     
     @IBAction func minusButtonTapped(_ sender: UIButton) {
@@ -73,11 +82,13 @@ class ListItemsTableViewCell: UITableViewCell {
     
     private func increaseQuantity(currentQuantity: Int) {
         let newQuantity = currentQuantity + 1
+        delegate?.selectedInvoice(code: code, quantity: newQuantity)
         quantityLabel.text = "\(newQuantity)"
     }
     
     private func decreaseQuantity(currentQuantity: Int) {
         let newQuantity = currentQuantity - 1
+        delegate?.selectedInvoice(code: code, quantity: newQuantity)
         quantityLabel.text = "\(newQuantity)"
     }
     

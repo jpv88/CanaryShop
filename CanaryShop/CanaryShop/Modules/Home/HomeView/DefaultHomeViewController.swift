@@ -13,6 +13,16 @@ class DefaultHomeViewController: BaseViewController {
     var tableManager: ListItemsTableManager?
     internal var tableView: UITableView!
     internal var buyButton: UIButton!
+    private var listItems: ListItemsModel!
+    private var invoice: [Invoice]? {
+        willSet {
+            if let value = newValue, !value.isEmpty {
+                buyButton.isEnabled = true
+            } else {
+                buyButton.isEnabled = false
+            }
+        }
+    }
     
     internal enum Constant {
         static let title = "Canary Shop"
@@ -44,6 +54,7 @@ class DefaultHomeViewController: BaseViewController {
 extension DefaultHomeViewController: HomeViewController {
     
     func showLoadedInfo(input: ListItemsModel) {
+        listItems = input
         tableManager?.set(input: input)
     }
     
@@ -55,8 +66,8 @@ extension DefaultHomeViewController: HomeViewController {
 
 extension DefaultHomeViewController: ListActions {
     
-    func someItemPressed(id: String) {
-        
+    func updateInvoice(invoice: [Invoice]) {
+        self.invoice = invoice
     }
     
     func updateUI() {

@@ -35,6 +35,7 @@
 		7F38FA6E269752F200866D2D /* ListItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38FA6C269752F200866D2D /* ListItemsTableViewCell.swift */; };
 		7F38FA6F269752F200866D2D /* ListItemsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F38FA6D269752F200866D2D /* ListItemsTableViewCell.xib */; };
 		7F38FA7126975ECE00866D2D /* UITableViewCell+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38FA7026975ECE00866D2D /* UITableViewCell+Identifier.swift */; };
+		7F38FA752697842300866D2D /* InvoiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38FA742697842300866D2D /* InvoiceModel.swift */; };
 		7F731CFF269358E00084EB87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F731CFE269358E00084EB87 /* AppDelegate.swift */; };
 		7F731D01269358E00084EB87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F731D00269358E00084EB87 /* SceneDelegate.swift */; };
 		7F731D08269358E10084EB87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F731D07269358E10084EB87 /* Assets.xcassets */; };
@@ -88,6 +89,7 @@
 		7F38FA6C269752F200866D2D /* ListItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsTableViewCell.swift; sourceTree = "<group>"; };
 		7F38FA6D269752F200866D2D /* ListItemsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListItemsTableViewCell.xib; sourceTree = "<group>"; };
 		7F38FA7026975ECE00866D2D /* UITableViewCell+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Identifier.swift"; sourceTree = "<group>"; };
+		7F38FA742697842300866D2D /* InvoiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceModel.swift; sourceTree = "<group>"; };
 		7F731CFB269358E00084EB87 /* CanaryShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanaryShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F731CFE269358E00084EB87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F731D00269358E00084EB87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 			children = (
 				7F38FA6B269752BD00866D2D /* Collections */,
 				7F38FA6926971F4900866D2D /* ListItemsTableManager.swift */,
+				7F38FA742697842300866D2D /* InvoiceModel.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -494,6 +497,7 @@
 				7F38FA4E2696FF1A00866D2D /* Interactor.swift in Sources */,
 				7F38FA512696FF6000866D2D /* ListItemsInteractor.swift in Sources */,
 				7F731D01269358E00084EB87 /* SceneDelegate.swift in Sources */,
+				7F38FA752697842300866D2D /* InvoiceModel.swift in Sources */,
 				7F38FA7126975ECE00866D2D /* UITableViewCell+Identifier.swift in Sources */,
 				7F38FA302696F91900866D2D /* DefaultHomeViewController.swift in Sources */,
 				7F38FA3E2696FC1200866D2D /* HomePresenter.swift in Sources */,

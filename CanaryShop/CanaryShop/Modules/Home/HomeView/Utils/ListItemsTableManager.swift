@@ -8,7 +8,7 @@
 import UIKit
 
 protocol ListActions {
-    func someItemPressed(id: String)
+    func updateInvoice(invoice: [Invoice])
     func updateUI()
 }
 
@@ -16,6 +16,7 @@ class ListItemsTableManager: NSObject, UITableViewDelegate, UITableViewDataSourc
     
     private var dataSource: ListItemsModel?
     var delegate: ListActions?
+    private var invoices: [Invoice] = []
     
     func set(input: ListItemsModel) {
         dataSource = input
@@ -37,9 +38,28 @@ class ListItemsTableManager: NSObject, UITableViewDelegate, UITableViewDataSourc
         guard let dataSource = dataSource else {
             return UITableViewCell()
         }
-        guard let products = dataSource.products, let title = products[indexPath.row].name else { return UITableViewCell() }
-        cell.fill(itemTitle: title)
+        guard let products = dataSource.products, let title = products[indexPath.row].name, let code = products[indexPath.row].code else { return UITableViewCell() }
+        cell.delegate = self
+        cell.fill(itemTitle: title, code: code)
         return cell
     }
     
+}
+
+extension ListItemsTableManager: ListItemsTableViewCellProtocol {
+    
+    func selectedInvoice(code: String, quantity: Int) {
+        if let index = invoices.firstIndex(where: {$0.code == code}) {
+            if quantity == 0 {
+                invoices.remove(at: index)
+            } else {
+                invoices[index].quantity = quantity
+            }
+        } else {
+            let newInvoice = Invoice(code: code, quantity: quantity)
+            invoices.append(newInvoice)
+        }
+        delegate?.updateInvoice(invoice: invoices)
+    }
+        
 }
