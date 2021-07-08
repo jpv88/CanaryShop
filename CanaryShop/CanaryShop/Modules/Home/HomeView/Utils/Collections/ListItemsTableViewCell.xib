@@ -53,10 +53,10 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XhL-zU-jj9">
-                        <rect key="frame" x="142.5" y="79" width="161.5" height="21"/>
+                        <rect key="frame" x="235" y="79" width="69" height="21"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIx-k6-295" userLabel="MinusButton">
-                                <rect key="frame" x="0.0" y="0.0" width="81" height="21"/>
+                                <rect key="frame" x="0.0" y="0.0" width="34.5" height="21"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="-"/>
                                 <connections>
@@ -64,7 +64,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDk-58-h9s" userLabel="PlusButton">
-                                <rect key="frame" x="81" y="0.0" width="80.5" height="21"/>
+                                <rect key="frame" x="34.5" y="0.0" width="34.5" height="21"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="+"/>
                                 <connections>
@@ -89,7 +89,6 @@
                     <constraint firstAttribute="bottomMargin" secondItem="RBo-1a-uhl" secondAttribute="bottom" constant="29" id="jCb-fm-dFz"/>
                     <constraint firstItem="UrE-z9-gXq" firstAttribute="centerY" secondItem="lhK-CL-Edr" secondAttribute="centerY" id="l45-dg-5bg"/>
                     <constraint firstItem="RBo-1a-uhl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="pT7-ZH-Pa8"/>
-                    <constraint firstItem="XhL-zU-jj9" firstAttribute="leading" secondItem="jQb-Wg-oT7" secondAttribute="trailing" constant="30.5" id="x8N-f0-oUF"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

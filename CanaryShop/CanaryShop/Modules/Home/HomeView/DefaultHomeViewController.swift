@@ -10,12 +10,14 @@ import UIKit
 class DefaultHomeViewController: BaseViewController {
     
     var presenter: HomePresenter?
-    var tableView: UITableView!
+    internal var tableView: UITableView!
     var tableManager: ListItemsTableManager?
+    internal var buyButton: UIButton!
     
     internal enum Constant {
         static let title = "Canary Shop"
         static let accessibilityIdentifier = "HomeView"
+        static let buyButton = "Comprar"
     }
     
     override func viewDidLoad() {
@@ -27,12 +29,15 @@ class DefaultHomeViewController: BaseViewController {
     override func buildComponents() {
         super.buildComponents()
         buildView()
-        buildTableViewComponent()
     }
     
     override func setUpLayout() {
         super.setUpLayout()
-        layoutTableViewComponent()
+        setUpLayoutView()
+    }
+    
+    @objc func buyButtonTapped(sender : UIButton) {
+        
     }
     
 }
