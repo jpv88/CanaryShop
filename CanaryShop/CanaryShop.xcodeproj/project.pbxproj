@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7F268E1B26937CDF000BF154 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 7F268E1A26937CDF000BF154 /* Swinject */; };
+		7F38FA302696F91900866D2D /* DefaultHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38FA2F2696F91900866D2D /* DefaultHomeViewController.swift */; };
+		7F38FA322696F92500866D2D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38FA312696F92500866D2D /* HomeViewController.swift */; };
 		7F731CFF269358E00084EB87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F731CFE269358E00084EB87 /* AppDelegate.swift */; };
 		7F731D01269358E00084EB87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F731D00269358E00084EB87 /* SceneDelegate.swift */; };
 		7F731D03269358E00084EB87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F731D02269358E00084EB87 /* ViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F38FA2F2696F91900866D2D /* DefaultHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHomeViewController.swift; sourceTree = "<group>"; };
+		7F38FA312696F92500866D2D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7F731CFB269358E00084EB87 /* CanaryShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanaryShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F731CFE269358E00084EB87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F731D00269358E00084EB87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 		7F38FA2A2696F7F700866D2D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				7F38FA2D2696F8B100866D2D /* Detail */,
+				7F38FA2C2696F8AC00866D2D /* Home */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -109,6 +115,30 @@
 			children = (
 			);
 			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		7F38FA2C2696F8AC00866D2D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7F38FA2E2696F8F600866D2D /* HomeView */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7F38FA2D2696F8B100866D2D /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		7F38FA2E2696F8F600866D2D /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				7F38FA2F2696F91900866D2D /* DefaultHomeViewController.swift */,
+				7F38FA312696F92500866D2D /* HomeViewController.swift */,
+			);
+			path = HomeView;
 			sourceTree = "<group>";
 		};
 		7F731CF2269358E00084EB87 = {
@@ -295,9 +325,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F38FA322696F92500866D2D /* HomeViewController.swift in Sources */,
 				7F731D03269358E00084EB87 /* ViewController.swift in Sources */,
 				7F731CFF269358E00084EB87 /* AppDelegate.swift in Sources */,
 				7F731D01269358E00084EB87 /* SceneDelegate.swift in Sources */,
+				7F38FA302696F91900866D2D /* DefaultHomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
