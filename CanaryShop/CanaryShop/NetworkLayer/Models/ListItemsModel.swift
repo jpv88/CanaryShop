@@ -16,4 +16,5 @@ import Foundation
 struct Product: Codable {
     let code, name: String?
     let price: Double?
+    var quantitySelected: Int? = 0
 }

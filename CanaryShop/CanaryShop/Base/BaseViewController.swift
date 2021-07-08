@@ -33,18 +33,20 @@ class BaseViewController: UIViewController {
     func setUpLayout() {}
     
     func showError(error: Error, firstButtonTitle: String = "OK", dismissButtonTitle: String = "Cancel", action: (()->())? = nil, dismissAction: (()->())? = nil) {
-        let alertView = UIAlertController()
-        let firstButton = UIAlertAction(title: firstButtonTitle, style: .default) { _ in
-            action?()
+        DispatchQueue.main.sync {
+            let alertView = UIAlertController()
+            let firstButton = UIAlertAction(title: firstButtonTitle, style: .default) { _ in
+                action?()
+            }
+            let dismissButton = UIAlertAction(title: dismissButtonTitle, style: .cancel) { _ in
+                dismissAction?()
+            }
+            alertView.title = "Error"
+            alertView.message = error.localizedDescription
+            alertView.addAction(firstButton)
+            alertView.addAction(dismissButton)
+            navigationController?.present(alertView, animated: true, completion: nil)
         }
-        let dismissButton = UIAlertAction(title: dismissButtonTitle, style: .cancel) { _ in
-            dismissAction?()
-        }
-        alertView.title = "Error"
-        alertView.message = error.localizedDescription
-        alertView.addAction(firstButton)
-        alertView.addAction(dismissButton)
-        navigationController?.present(alertView, animated: true, completion: nil)
     }
     
     func showAlert(title: String, msg: String, dismissButtonTitle: String = "Cancel", action: (()->())? = nil, dismissAction: (()->())? = nil) {

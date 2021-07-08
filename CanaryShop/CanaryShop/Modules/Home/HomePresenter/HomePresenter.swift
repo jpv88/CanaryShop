@@ -8,6 +8,6 @@
 import Foundation
 
 protocol HomePresenter {
-    func onViewDidLoad()
+    func viewWillAppear()
     func buyButtonPressed(element: String)
 }

@@ -10,8 +10,8 @@ import UIKit
 class DefaultHomeViewController: BaseViewController {
     
     var presenter: HomePresenter?
-    internal var tableView: UITableView!
     var tableManager: ListItemsTableManager?
+    internal var tableView: UITableView!
     internal var buyButton: UIButton!
     
     internal enum Constant {
@@ -20,10 +20,9 @@ class DefaultHomeViewController: BaseViewController {
         static let buyButton = "Comprar"
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        presenter?.onViewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        presenter?.viewWillAppear()
     }
     
     override func buildComponents() {
