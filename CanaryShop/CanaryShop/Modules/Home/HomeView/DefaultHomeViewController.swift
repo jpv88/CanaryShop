@@ -10,6 +10,8 @@ import UIKit
 class DefaultHomeViewController: BaseViewController {
     
     var presenter: HomePresenter?
+    var tableView: UITableView!
+    var tableManager: ListItemsTableManager?
     
     internal enum Constant {
         static let title = "Canary Shop"
@@ -24,13 +26,13 @@ class DefaultHomeViewController: BaseViewController {
     
     override func buildComponents() {
         super.buildComponents()
-//        buildView()
-//        buildTableViewComponent()
+        buildView()
+        buildTableViewComponent()
     }
     
     override func setUpLayout() {
         super.setUpLayout()
-//        layoutTableViewComponent()
+        layoutTableViewComponent()
     }
     
 }
@@ -38,11 +40,25 @@ class DefaultHomeViewController: BaseViewController {
 extension DefaultHomeViewController: HomeViewController {
     
     func showLoadedInfo(input: ListItemsModel) {
-        print("Items")
+        tableManager?.set(input: input)
     }
     
     func showThisError(error: Error) {
-        
+        showError(error: error)
     }
         
+}
+
+extension DefaultHomeViewController: ListActions {
+    
+    func someItemPressed(id: String) {
+        
+    }
+    
+    func updateUI() {
+        DispatchQueue.main.async { [weak self] in
+            self?.tableView.reloadData()
+        }
+    }
+    
 }

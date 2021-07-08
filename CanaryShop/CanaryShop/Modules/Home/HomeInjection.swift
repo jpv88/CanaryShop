@@ -43,6 +43,9 @@ internal extension Injector {
     private func registerViewController() {
         injector.register(HomeViewController.self) { r in
             let viewController = DefaultHomeViewController()
+            let tableManager = r.resolve(ListItemsTableManager.self)
+            tableManager?.delegate = viewController
+            viewController.tableManager = tableManager
             let presenter = r.resolve(HomePresenter.self, argument: viewController)
             viewController.presenter = presenter
             return viewController
