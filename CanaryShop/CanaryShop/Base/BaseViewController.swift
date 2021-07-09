@@ -18,18 +18,18 @@ class BaseViewController: UIViewController {
     func buildComponents() {
         view.backgroundColor = Colors.main
         navigationController?.navigationBar.prefersLargeTitles = false
-
-         let appearance = UINavigationBarAppearance()
+        
+        let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = Colors.tertiary
         appearance.titleTextAttributes = [.foregroundColor: Colors.secondary]
-         appearance.largeTitleTextAttributes = [.foregroundColor: Colors.secondary]
-
-         navigationController?.navigationBar.tintColor = .white
-         navigationController?.navigationBar.standardAppearance = appearance
-         navigationController?.navigationBar.compactAppearance = appearance
-         navigationController?.navigationBar.scrollEdgeAppearance = appearance
+        appearance.largeTitleTextAttributes = [.foregroundColor: Colors.secondary]
+        
+        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.compactAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
     }
-
+    
     func setUpLayout() {}
     
     func showError(error: Error, firstButtonTitle: String = "OK", dismissButtonTitle: String = "Cancel", action: (()->())? = nil, dismissAction: (()->())? = nil) {
