@@ -24,7 +24,9 @@ class DefaultDetailPresenter: DetailPresenter {
     }
     
     func viewDidLoad() {
-        print("viewDidLoad")
+        view?.showLoadedInfo(input: [
+            ListPurchaseModel(itemName: "Coca", quantity: "2", price: "10", priceWithDiscount: "5", discountDescription: "50 % 50 % 50 % 50 % 50 % 50 % 50 % 50 % ")
+        ])
     }
     
     func confirmButtonTapped() {

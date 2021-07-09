@@ -45,6 +45,9 @@ internal extension Injector {
     private func registerViewController() {
         injector.register(DetailViewController.self) { (r: ResolverInjection, items: ListItemsModel, invoice: [Invoice]) in
             let viewController = DefaultDetailViewController()
+            let tableManager = r.resolve(ListPurchaseTableManager.self)
+            tableManager?.delegate = viewController
+            viewController.tableManager = tableManager
             let presenter = r.resolve(DetailPresenter.self, arguments: items, invoice, viewController)
             viewController.presenter = presenter
             return viewController

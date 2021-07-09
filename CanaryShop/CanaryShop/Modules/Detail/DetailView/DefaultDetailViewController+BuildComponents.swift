@@ -51,9 +51,9 @@ internal extension DefaultDetailViewController {
         component.bounces = false
         component.separatorStyle = .singleLine
         component.separatorColor = Colors.tertiary
-//        component.delegate = tableManager
-//        component.dataSource = tableManager
-//        component.register(UINib(nibName: ListItemsTableViewCell.getIdentifier(), bundle: nil), forCellReuseIdentifier: ListItemsTableViewCell.getIdentifier())
+        component.delegate = tableManager
+        component.dataSource = tableManager
+        component.register(UINib(nibName: ListPurchaseTableViewCell.getIdentifier(), bundle: nil), forCellReuseIdentifier: ListPurchaseTableViewCell.getIdentifier())
         tableView = component
     }
     

@@ -10,6 +10,7 @@ import UIKit
 class DefaultDetailViewController: BaseViewController {
     
     var presenter: DetailPresenter?
+    var tableManager: ListPurchaseTableManager?
     internal var confirmButton: UIButton!
     internal var totalLabel: UILabel!
     internal var totalValueLabel: UILabel!
@@ -45,8 +46,18 @@ class DefaultDetailViewController: BaseViewController {
 
 extension DefaultDetailViewController: DetailViewController {
     
-    func showLoadedInfo(input: String) {
+    func showLoadedInfo(input: [ListPurchaseModel]) {
+        tableManager?.set(input: input)
+    }
         
+}
+
+extension DefaultDetailViewController: PurchaseActions {
+    
+    func updateUI() {
+        DispatchQueue.main.async { [weak self] in
+            self?.tableView.reloadData()
+        }
     }
         
 }

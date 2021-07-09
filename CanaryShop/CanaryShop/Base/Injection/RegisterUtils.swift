@@ -12,6 +12,7 @@ internal extension Injector {
     func registerUtils() {
         registerWebService()
         registerListItemsTableManager()
+        registerListPurchaseTableManager()
     }
     
     private func registerWebService() {
@@ -23,6 +24,11 @@ internal extension Injector {
     private func registerListItemsTableManager() {
         injector.register(ListItemsTableManager.self) { _ in
             ListItemsTableManager()
+        }
+    }
+    private func registerListPurchaseTableManager() {
+        injector.register(ListPurchaseTableManager.self) { _ in
+            ListPurchaseTableManager()
         }
     }
     

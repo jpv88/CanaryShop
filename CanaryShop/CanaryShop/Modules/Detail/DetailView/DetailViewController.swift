@@ -8,5 +8,5 @@
 import UIKit
 
 @objc protocol DetailViewController where Self: UIViewController {
-    func showLoadedInfo(input: String)    
+    func showLoadedInfo(input: [ListPurchaseModel])    
 }
