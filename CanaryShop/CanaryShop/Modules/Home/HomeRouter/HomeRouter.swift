@@ -8,5 +8,5 @@
 import Foundation
 
 protocol HomeRouter: RouterBase {
-    func showDetailView(detailModel: String)
+    func showDetailView(list: ListItemsModel, invoice: [Invoice])
 }

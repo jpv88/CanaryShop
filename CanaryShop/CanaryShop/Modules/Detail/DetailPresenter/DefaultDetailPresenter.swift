@@ -11,14 +11,20 @@ class DefaultDetailPresenter: DetailPresenter {
     
     private weak var view: DetailViewController?
     private let router: DetailRouter
+    private let itemsList: ListItemsModel
+    private let invoice: [Invoice]
+    private let discountsInteractor: DiscountsInteractor
     
-    init(view: DetailViewController, router: DetailRouter) {
+    init(view: DetailViewController, router: DetailRouter, itemsList: ListItemsModel, invoice: [Invoice], discountsInteractor: DiscountsInteractor) {
         self.view = view
         self.router = router
+        self.itemsList = itemsList
+        self.invoice = invoice
+        self.discountsInteractor = discountsInteractor
     }
     
     func viewDidLoad() {
-        
+        print("viewDidLoad")
     }
     
 }

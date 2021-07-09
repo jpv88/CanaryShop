@@ -17,8 +17,11 @@ class DefaultHomeRouter: HomeRouter {
         self.viewController = viewController
     }
 
-    func showDetailView(detailModel: String) {
-        
+    func showDetailView(list: ListItemsModel, invoice: [Invoice]) {
+        guard let detailViewController = resolver.resolve(DetailViewController.self, arguments: list, invoice) as? DefaultDetailViewController else { return }
+        DispatchQueue.main.async { [weak self] in
+            self?.viewController.navigationController?.pushViewController(detailViewController, animated: true)
+        }
     }
     
 }

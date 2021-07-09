@@ -24,7 +24,7 @@ class DefaultHomePresenter: HomePresenter {
     }
     
     func buyButtonPressed(list: ListItemsModel, invoice: [Invoice]) {
-        // send to detail screen
+        router.showDetailView(list: list, invoice: invoice)
     }
 
     private func getItems() {

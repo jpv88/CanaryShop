@@ -30,3 +30,11 @@ class DefaultDetailViewController: BaseViewController {
         layoutView()
     }
 }
+
+extension DefaultDetailViewController: DetailViewController {
+    
+    func showLoadedInfo(input: String) {
+        
+    }
+        
+}

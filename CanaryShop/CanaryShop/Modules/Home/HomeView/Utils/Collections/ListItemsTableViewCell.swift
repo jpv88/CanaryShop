@@ -35,7 +35,7 @@ class ListItemsTableViewCell: UITableViewCell {
         super.awakeFromNib()
         setup()
     }
-
+    
     private func setup() {
         selectionStyle = .none
         backgroundColor = .none
@@ -58,9 +58,10 @@ class ListItemsTableViewCell: UITableViewCell {
         button.tintColor = Colors.secondary
     }
     
-    func fill(itemTitle: String, code: String, price: String) {
+    func fill(itemTitle: String, code: String, price: String, quantity: String = "0") {
         itemNameLabel.text = itemTitle
         priceValueLabel.text = price
+        quantityLabel.text = quantity
         self.code = code
     }
     

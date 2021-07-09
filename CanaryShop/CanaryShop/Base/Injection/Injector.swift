@@ -28,9 +28,11 @@ class Injector {
     
     private func registerInteractors() {
         registerListItemsInteractorInjector()
+        registerDiscountsInteractorInjection()
     }
     
     private func registerModules() {
         registerHomeModule()
+        registerDetailModule()
     }
 }
