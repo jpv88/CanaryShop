@@ -19,7 +19,7 @@ class DefaultHomePresenter: HomePresenter {
         self.listItemsInteractor = listItemsInteractor
     }
     
-    func viewWillAppear() {
+    func viewDidLoad() {
         getItems()
     }
     

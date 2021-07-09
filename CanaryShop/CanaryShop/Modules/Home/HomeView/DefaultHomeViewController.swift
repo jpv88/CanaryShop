@@ -30,10 +30,10 @@ class DefaultHomeViewController: BaseViewController {
         static let buyButton = "Comprar"
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        presenter?.viewWillAppear()
-    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        presenter?.viewDidLoad()
+    }    
     
     override func buildComponents() {
         super.buildComponents()
