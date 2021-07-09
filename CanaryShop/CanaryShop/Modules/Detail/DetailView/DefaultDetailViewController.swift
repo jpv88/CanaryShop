@@ -46,7 +46,14 @@ class DefaultDetailViewController: BaseViewController {
 
 extension DefaultDetailViewController: DetailViewController {
     
-    func showLoadedInfo(input: [ListPurchaseModel]) {
+    func showThisError(error: Error) {
+        showError(error: error)
+    }
+        
+    func showLoadedInfo(input: PurchaseModel) {
+        DispatchQueue.main.async { [weak self] in
+            self?.totalValueLabel.text = input.totalValue
+        }
         tableManager?.set(input: input)
     }
         

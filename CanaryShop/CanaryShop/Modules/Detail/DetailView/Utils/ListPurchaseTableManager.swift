@@ -13,10 +13,10 @@ protocol PurchaseActions {
 
 class ListPurchaseTableManager: NSObject, UITableViewDelegate, UITableViewDataSource {
     
-    private var dataSource: [ListPurchaseModel]?
+    private var dataSource: PurchaseModel?
     var delegate: PurchaseActions?
     
-    func set(input: [ListPurchaseModel]) {
+    func set(input: PurchaseModel) {
         dataSource = input
         delegate?.updateUI()
     }
@@ -26,7 +26,7 @@ class ListPurchaseTableManager: NSObject, UITableViewDelegate, UITableViewDataSo
     }
     
     internal func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataSource?.count ?? 0
+        return dataSource?.listItems.count ?? 0
     }
     
     internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -36,7 +36,7 @@ class ListPurchaseTableManager: NSObject, UITableViewDelegate, UITableViewDataSo
         guard let dataSource = dataSource else {
             return UITableViewCell()
         }
-        let source = dataSource[indexPath.row]
+        let source = dataSource.listItems[indexPath.row]
         cell.fill(itemName: source.itemName, quantity: source.quantity, price: source.price, priceWithDiscount: source.priceWithDiscount, discountDescription: source.discountDescription)
         return cell
     }

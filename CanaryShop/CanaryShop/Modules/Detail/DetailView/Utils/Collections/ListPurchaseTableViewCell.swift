@@ -34,8 +34,8 @@ class ListPurchaseTableViewCell: UITableViewCell {
         quantityValueLabel.textColor = Colors.secondary
         priceLabel.textColor = Colors.secondary
         priceValueLabel.textColor = Colors.secondary
-        priceDiscountLabel.textColor = Colors.secondary
-        priceDiscountValueLabel.textColor = Colors.secondary
+        priceDiscountLabel.textColor = Colors.yellow
+        priceDiscountValueLabel.textColor = Colors.yellow
         discountDescriptionLabel.textColor = Colors.secondary
         discountDescriptionValueLabel.textColor = Colors.secondary
     }

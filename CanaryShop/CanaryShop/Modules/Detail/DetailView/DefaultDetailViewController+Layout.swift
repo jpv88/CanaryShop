@@ -41,7 +41,7 @@ internal extension DefaultDetailViewController {
         totalValueLabel.translatesAutoresizingMaskIntoConstraints = false
         totalValueLabel.centerYAnchor.constraint(equalTo: totalLabel.centerYAnchor).isActive = true
         totalValueLabel.heightAnchor.constraint(equalToConstant: Constant.labelsHeight).isActive = true
-        totalValueLabel.leadingAnchor.constraint(equalTo: totalLabel.leadingAnchor, constant: Constant.marginSeparator).isActive = true
+        totalValueLabel.leadingAnchor.constraint(equalTo: totalLabel.trailingAnchor, constant: Constant.marginSeparator).isActive = true
     }
     
     private func layoutTableViewComponent() {

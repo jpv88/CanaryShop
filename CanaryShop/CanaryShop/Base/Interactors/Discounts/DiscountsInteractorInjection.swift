@@ -10,8 +10,8 @@ import Foundation
 internal extension Injector {
     
     func registerDiscountsInteractorInjection() {
-        injector.register(DiscountsInteractor.self) { _ in
-            DiscountsInteractor()
+        injector.register(DiscountsInteractor.self) { r in
+            DiscountsInteractor(discountsManager: r.resolve(DiscountsManager.self) ?? DiscountsManager())
         }
     }
     
