@@ -38,9 +38,11 @@ class ListItemsTableManager: NSObject, UITableViewDelegate, UITableViewDataSourc
         guard let dataSource = dataSource else {
             return UITableViewCell()
         }
-        guard let products = dataSource.products, let title = products[indexPath.row].name, let code = products[indexPath.row].code else { return UITableViewCell() }
+        guard let products = dataSource.products else { return UITableViewCell() }
+        let product = products[indexPath.row]
+        guard let title = product.name, let code = product.code, let price = product.price else { return UITableViewCell() }
         cell.delegate = self
-        cell.fill(itemTitle: title, code: code)
+        cell.fill(itemTitle: title, code: code, price: price.description)
         return cell
     }
     

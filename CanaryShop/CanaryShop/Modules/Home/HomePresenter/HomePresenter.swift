@@ -9,5 +9,5 @@ import Foundation
 
 protocol HomePresenter {
     func viewWillAppear()
-    func buyButtonPressed(element: String)
+    func buyButtonPressed(list: ListItemsModel, invoice: [Invoice])
 }

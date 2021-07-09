@@ -26,6 +26,8 @@ class ListItemsTableViewCell: UITableViewCell {
     @IBOutlet private var quantityTitleLabel: UILabel!
     @IBOutlet private var itemNameLabel: UILabel!
     @IBOutlet private var itemTitleLabel: UILabel!
+    @IBOutlet private var priceTitleLabel: UILabel!
+    @IBOutlet private var priceValueLabel: UILabel!
     
     private var code: String!
     
@@ -42,6 +44,8 @@ class ListItemsTableViewCell: UITableViewCell {
         itemNameLabel.textColor = Colors.secondary
         quantityLabel.textColor = Colors.secondary
         quantityLabel.text = "0"
+        priceTitleLabel.textColor = Colors.secondary
+        priceValueLabel.textColor = Colors.secondary
         configButton(button: plusButton)
         configButton(button: minusButton)
     }
@@ -54,8 +58,9 @@ class ListItemsTableViewCell: UITableViewCell {
         button.tintColor = Colors.secondary
     }
     
-    func fill(itemTitle: String, code: String) {
+    func fill(itemTitle: String, code: String, price: String) {
         itemNameLabel.text = itemTitle
+        priceValueLabel.text = price
         self.code = code
     }
     

@@ -23,7 +23,7 @@ class DefaultHomePresenter: HomePresenter {
         getItems()
     }
     
-    func buyButtonPressed(element: String) {
+    func buyButtonPressed(list: ListItemsModel, invoice: [Invoice]) {
         // send to detail screen
     }
 

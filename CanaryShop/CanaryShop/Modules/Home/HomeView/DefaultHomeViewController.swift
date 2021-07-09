@@ -46,7 +46,8 @@ class DefaultHomeViewController: BaseViewController {
     }
     
     @objc func buyButtonTapped(sender : UIButton) {
-        
+        guard let invoices = invoice else { return }
+        presenter?.buyButtonPressed(list: listItems, invoice: invoices)
     }
     
 }
