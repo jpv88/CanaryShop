@@ -27,4 +27,8 @@ class DefaultDetailPresenter: DetailPresenter {
         print("viewDidLoad")
     }
     
+    func confirmButtonTapped() {
+        router.showPurchaseSuccess()
+    }
+    
 }

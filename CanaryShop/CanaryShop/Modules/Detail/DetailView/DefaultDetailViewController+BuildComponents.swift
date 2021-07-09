@@ -28,7 +28,6 @@ internal extension DefaultDetailViewController {
         component.setTitle(Constant.confirmButton, for: .normal)
         component.setTitleColor(Colors.secondary, for: .normal)
         component.addTarget(self, action: #selector(self.confirmButtonTapped), for: .touchUpInside)
-        component.isEnabled = false
         confirmButton = component
     }
     

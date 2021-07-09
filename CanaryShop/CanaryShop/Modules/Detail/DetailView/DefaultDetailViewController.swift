@@ -39,7 +39,7 @@ class DefaultDetailViewController: BaseViewController {
     }
     
     @objc func confirmButtonTapped(sender : UIButton) {
-        
+        presenter?.confirmButtonTapped()
     }
 }
 

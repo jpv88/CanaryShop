@@ -19,7 +19,7 @@ class DefaultDetailRouter: DetailRouter {
     }
     
     func showPurchaseSuccess() {
-        
+        viewController.showAlert(title: "Success", msg: "Your order has been successful.")
     }
     
 }
