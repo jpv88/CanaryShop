@@ -25,7 +25,12 @@ class DefaultDetailPresenter: DetailPresenter {
     
     func viewDidLoad() {
         view?.showLoadedInfo(input: [
-            ListPurchaseModel(itemName: "Coca", quantity: "2", price: "10", priceWithDiscount: "5", discountDescription: "50 % 50 % 50 % 50 % 50 % 50 % 50 % 50 % ")
+            ListPurchaseModel(itemName: "Coca", quantity: "2", price: "10", priceWithDiscount: "5", discountDescription: "50 % 50 % 50 % 50 % 50 % 50 % 50 % 50 % "),
+            ListPurchaseModel(itemName: "Coca", quantity: "2", price: "10", priceWithDiscount: "5", discountDescription: "50 % 50 % 50 % 50 % 50 % 50 % 50 % 50 % "),
+            ListPurchaseModel(itemName: "Coca", quantity: "2", price: "10", priceWithDiscount: "5", discountDescription: "50 % 50 % 50 % 50 % 50 % 50 % 50 % 50 % "),
+            ListPurchaseModel(itemName: "Coca", quantity: "2", price: "10", priceWithDiscount: "5", discountDescription: "50 % 50 % 50 % 50 % 50 % 50 % 50 % 50 % "),
+            ListPurchaseModel(itemName: "Coca", quantity: "2", price: "10", priceWithDiscount: "5", discountDescription: "50 % 50 % 50 % 50 % 50 % 50 % 50 % 50 % "),
+            ListPurchaseModel(itemName: "Coca2", quantity: "1", price: "10", priceWithDiscount: "5", discountDescription: "50 % 50 % 50 % 50 % 50 % 50 % 50 % 50 % ")
         ])
     }
     

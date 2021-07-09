@@ -51,7 +51,7 @@ internal extension DefaultDetailViewController {
         tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
         tableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
         tableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
-        tableView.bottomAnchor.constraint(equalTo: totalLabel.topAnchor, constant: Constant.marginSeparator).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: totalLabel.topAnchor, constant: -Constant.marginSeparator).isActive = true
     }
     
 }

@@ -34,14 +34,14 @@ internal extension DefaultDetailViewController {
     private func buildTotalLabelComponent() {
         let component = UILabel()
         component.text = "Total:"
-        component.textColor = Colors.secondary
+        component.textColor = Colors.yellow
         totalLabel = component
     }
     
     private func buildTotalLabelValueComponent() {
         let component = UILabel()
         component.text = ""
-        component.textColor = Colors.secondary
+        component.textColor = Colors.yellow
         totalValueLabel = component
     }
     
