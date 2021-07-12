@@ -28,6 +28,7 @@ class DefaultHomeViewController: BaseViewController {
         static let title = "Canary Shop"
         static let accessibilityIdentifier = "HomeView"
         static let buyButton = "Comprar"
+        static let buyButtonIdentifier = "BuyButtonId"
     }
     
     override func viewDidLoad() {

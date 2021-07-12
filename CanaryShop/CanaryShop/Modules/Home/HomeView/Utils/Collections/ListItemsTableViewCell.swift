@@ -39,6 +39,7 @@ class ListItemsTableViewCell: UITableViewCell {
     private func setup() {
         selectionStyle = .none
         backgroundColor = .none
+        plusButton.accessibilityIdentifier = "PlusButtonBuy"
         itemTitleLabel.textColor = Colors.secondary
         quantityTitleLabel.textColor = Colors.secondary
         itemNameLabel.textColor = Colors.secondary

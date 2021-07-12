@@ -40,6 +40,7 @@ internal extension DefaultHomeViewController {
         component.setTitleColor(Colors.tertiary, for: .disabled)
         component.addTarget(self, action: #selector(self.buyButtonTapped), for: .touchUpInside)
         component.isEnabled = false
+        component.accessibilityIdentifier = Constant.buyButtonIdentifier
         buyButton = component
     }
     
