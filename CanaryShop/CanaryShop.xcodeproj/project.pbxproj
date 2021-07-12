@@ -58,6 +58,14 @@
 		7F731D0B269358E10084EB87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F731D09269358E10084EB87 /* LaunchScreen.storyboard */; };
 		7F731D16269358E10084EB87 /* CanaryShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F731D15269358E10084EB87 /* CanaryShopTests.swift */; };
 		7F731D20269358E10084EB87 /* CanaryShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F731D1F269358E10084EB87 /* CanaryShopUITests.swift */; };
+		7FC8DB38269C5938003BC4A8 /* DiscountsInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC8DB37269C5938003BC4A8 /* DiscountsInteractorMock.swift */; };
+		7FC8DB3A269C5940003BC4A8 /* DiscountsInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC8DB39269C5940003BC4A8 /* DiscountsInteractorTest.swift */; };
+		7FC8DB3C269C5C2E003BC4A8 /* DiscountsManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC8DB3B269C5C2E003BC4A8 /* DiscountsManagerMock.swift */; };
+		7FC8DB3E269C6050003BC4A8 /* ListItemsInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC8DB3D269C6050003BC4A8 /* ListItemsInteractorMock.swift */; };
+		7FC8DB41269C60D7003BC4A8 /* ListItemsModelJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 7FC8DB40269C60D7003BC4A8 /* ListItemsModelJSON.json */; };
+		7FC8DB44269C62D3003BC4A8 /* InvoiceStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC8DB43269C62D3003BC4A8 /* InvoiceStubs.swift */; };
+		7FC8DB45269C670A003BC4A8 /* ListItemsModelJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 7FC8DB40269C60D7003BC4A8 /* ListItemsModelJSON.json */; };
+		7FC8DB46269C670A003BC4A8 /* ListItemsModelJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 7FC8DB40269C60D7003BC4A8 /* ListItemsModelJSON.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +140,12 @@
 		7F731D15269358E10084EB87 /* CanaryShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanaryShopTests.swift; sourceTree = "<group>"; };
 		7F731D1B269358E10084EB87 /* CanaryShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanaryShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F731D1F269358E10084EB87 /* CanaryShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanaryShopUITests.swift; sourceTree = "<group>"; };
+		7FC8DB37269C5938003BC4A8 /* DiscountsInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountsInteractorMock.swift; sourceTree = "<group>"; };
+		7FC8DB39269C5940003BC4A8 /* DiscountsInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountsInteractorTest.swift; sourceTree = "<group>"; };
+		7FC8DB3B269C5C2E003BC4A8 /* DiscountsManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountsManagerMock.swift; sourceTree = "<group>"; };
+		7FC8DB3D269C6050003BC4A8 /* ListItemsInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsInteractorMock.swift; sourceTree = "<group>"; };
+		7FC8DB40269C60D7003BC4A8 /* ListItemsModelJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ListItemsModelJSON.json; sourceTree = "<group>"; };
+		7FC8DB43269C62D3003BC4A8 /* InvoiceStubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceStubs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -439,7 +453,11 @@
 		7F731D14269358E10084EB87 /* CanaryShopTests */ = {
 			isa = PBXGroup;
 			children = (
+				7FC8DB42269C62C3003BC4A8 /* Stubs */,
 				7F731D15269358E10084EB87 /* CanaryShopTests.swift */,
+				7FC8DB39269C5940003BC4A8 /* DiscountsInteractorTest.swift */,
+				7FC8DB36269C591F003BC4A8 /* CommonMocks */,
+				7FC8DB3F269C6074003BC4A8 /* JSON */,
 			);
 			path = CanaryShopTests;
 			sourceTree = "<group>";
@@ -450,6 +468,32 @@
 				7F731D1F269358E10084EB87 /* CanaryShopUITests.swift */,
 			);
 			path = CanaryShopUITests;
+			sourceTree = "<group>";
+		};
+		7FC8DB36269C591F003BC4A8 /* CommonMocks */ = {
+			isa = PBXGroup;
+			children = (
+				7FC8DB37269C5938003BC4A8 /* DiscountsInteractorMock.swift */,
+				7FC8DB3B269C5C2E003BC4A8 /* DiscountsManagerMock.swift */,
+				7FC8DB3D269C6050003BC4A8 /* ListItemsInteractorMock.swift */,
+			);
+			path = CommonMocks;
+			sourceTree = "<group>";
+		};
+		7FC8DB3F269C6074003BC4A8 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				7FC8DB40269C60D7003BC4A8 /* ListItemsModelJSON.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		7FC8DB42269C62C3003BC4A8 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				7FC8DB43269C62D3003BC4A8 /* InvoiceStubs.swift */,
+			);
+			path = Stubs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -564,6 +608,7 @@
 			files = (
 				7F38FA9B26986D3A00866D2D /* ListPurchaseTableViewCell.xib in Resources */,
 				7F731D0B269358E10084EB87 /* LaunchScreen.storyboard in Resources */,
+				7FC8DB45269C670A003BC4A8 /* ListItemsModelJSON.json in Resources */,
 				7F38FA6F269752F200866D2D /* ListItemsTableViewCell.xib in Resources */,
 				7F731D08269358E10084EB87 /* Assets.xcassets in Resources */,
 			);
@@ -573,6 +618,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FC8DB41269C60D7003BC4A8 /* ListItemsModelJSON.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +626,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FC8DB46269C670A003BC4A8 /* ListItemsModelJSON.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,6 +689,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F731D16269358E10084EB87 /* CanaryShopTests.swift in Sources */,
+				7FC8DB44269C62D3003BC4A8 /* InvoiceStubs.swift in Sources */,
+				7FC8DB3A269C5940003BC4A8 /* DiscountsInteractorTest.swift in Sources */,
+				7FC8DB3C269C5C2E003BC4A8 /* DiscountsManagerMock.swift in Sources */,
+				7FC8DB3E269C6050003BC4A8 /* ListItemsInteractorMock.swift in Sources */,
+				7FC8DB38269C5938003BC4A8 /* DiscountsInteractorMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
